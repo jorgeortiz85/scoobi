@@ -122,4 +122,20 @@ seq(lsSettings :_*)
 
 (LsKeys.ghUser in LsKeys.lsync) := Some("nicta")
 
+<<<<<<< HEAD
 (LsKeys.ghRepo in LsKeys.lsync) := Some("scoobi")
+=======
+pomExtra :=
+    <build>
+        <plugins>
+             <plugin>
+                <groupId>com.mycila.maven-license-plugin</groupId>
+                <artifactId>maven-license-plugin</artifactId>
+                <configuration>
+                    <header>notes/header.txt</header>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+>>>>>>> 7f5d90f1c2d96a64bb1985dc44a804ce303fdfc4
